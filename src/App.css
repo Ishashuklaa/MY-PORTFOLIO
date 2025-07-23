@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section */
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-dark {
+  background: #1a1a1a;
+}
+
+.section-darker {
+  background: #0f0f0f;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-number {
+  font-size: 1.2rem;
+  color: #00ff88;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section-title h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #888888;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  color: #778adf;
+  border-color: #778adf;
+}
+
+.btn-primary:hover {
+  background: #677acc;
+  color: #1a1a1a;
+  transform: translateY(-3px);
+  box-shadow: #778adf;
+}
+.btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: #ffffff;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  .section-title h2 {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}

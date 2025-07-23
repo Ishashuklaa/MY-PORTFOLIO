@@ -1,0 +1,206 @@
+.footer {
+  background: #0f0f0f;
+  color: #ffffff;
+  padding: 60px 0 20px;
+  position: relative;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand {
+  max-width: 400px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.logo-circle {
+  width: 8px;
+  height: 8px;
+  background: #778adf;
+  border-radius: 50%;
+}
+
+.footer-tagline {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-links-group h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-group li {
+  margin-bottom: 12px;
+}
+
+.footer-links-group a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links-group a:hover {
+  color: #778adf;
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright p {
+  color: #888888;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.heart {
+  color: #778adf;
+  animation: heartBeat 2s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-bottom-links a {
+  color: #888888;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #778adf;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #778adf;
+  border: none;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 968px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-content {
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer-bottom-links {
+    gap: 20px;
+  }
+
+  .scroll-top-btn {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-tagline {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .copyright p {
+    font-size: 0.8rem;
+  }
+}

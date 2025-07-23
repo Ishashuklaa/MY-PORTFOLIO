@@ -1,0 +1,100 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-large {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-text-large {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.logo-circle-large {
+  width: 30px;
+  height: 30px;
+  background: #778adf;
+  border-radius: 50%;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.about-buttons {
+  /* Button styles inherited from App.css */
+}
+.btn-primary {
+  color: #778adf;
+  border-color: #778adf;
+}
+
+.btn-primary:hover {
+  background: #677acc;
+  color: #1a1a1a;
+  transform: translateY(-3px);
+  box-shadow: #778adf;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .logo-text-large {
+    font-size: 6rem;
+  }
+  
+  .logo-circle-large {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-text-large {
+    font-size: 5rem;
+  }
+  
+  .logo-circle-large {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text-large {
+    font-size: 4rem;
+  }
+  
+  .about-content {
+    gap: 30px;
+  }
+}
